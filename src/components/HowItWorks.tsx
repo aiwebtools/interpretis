@@ -33,7 +33,14 @@ const HowItWorks: React.FC = () => {
   return (
     <section className="section relative" id="how-it-works">
       <div className="container-custom">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
+          <div className="max-w-md mx-auto mb-8">
+            <img 
+              src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-historical-style-advertisement-for-the_JUvQJ.png/:/cr=t:0%25,l:18.29%25,w:56.1%25,h:100%25/rs=w:1200,h:1200,cg:true" 
+              alt="Interpretis Historical Advertisement" 
+              className="w-full h-auto rounded-lg shadow-lg border border-interpretis-accent1/30 hover:shadow-neon-cyan transition-all duration-300"
+            />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="text-gradient">How Interpretis Works</span>
           </h2>
