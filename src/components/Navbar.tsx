@@ -78,8 +78,8 @@ const Navbar: React.FC = () => {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in-down">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 animate-fade-in-down bg-interpretis-darker/95 backdrop-blur-lg rounded-b-xl shadow-lg">
+            <div className="flex flex-col space-y-4 p-4">
               {navLinks.map((link, index) => (
                 link.isButton ? (
                   <Button 
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
                   <a 
                     key={index} 
                     href={link.href}
-                    className="text-interpretis-text hover:text-interpretis-accent1 transition-colors py-2 font-medium"
+                    className="text-interpretis-text hover:text-interpretis-accent1 transition-colors py-2 px-4 rounded-md bg-interpretis-dark/80 border border-interpretis-accent1/20 hover:bg-interpretis-dark hover:border-interpretis-accent1/40 font-medium"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
