@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Interpretis 🕰️ AI - Uncover the Hidden Depths of Language";
+    document.title = "Interpretis - AI Etymology & Root Word Analysis Tool";
   }, []);
 
   return (
