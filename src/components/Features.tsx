@@ -12,7 +12,7 @@ const features = [
   {
     icon: History,
     title: 'Historical Context',
-    description: 'Explains origins and first recorded uses, including relevant historical events or societal conditions that shaped the term's development.',
+    description: 'Explains origins and first recorded uses, including relevant historical events or societal conditions that shaped the term\'s development.',
     accentColor: 'interpretis-accent2'
   },
   {

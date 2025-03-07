@@ -6,7 +6,7 @@ const steps = [
   {
     number: '01',
     title: 'Input a Term',
-    description: 'Enter any word, phrase, idiom, or concept you're curious about. From everyday terms to obscure cultural references.',
+    description: 'Enter any word, phrase, idiom, or concept you\'re curious about. From everyday terms to obscure cultural references.',
     icon: '🔍'
   },
   {
