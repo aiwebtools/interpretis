@@ -107,15 +107,6 @@ const Footer: React.FC = () => {
           >
             © 2025 AI WEB TOOLS LLC All rights reserved.
           </a>
-          
-          <div className="mt-4">
-            <img 
-              src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-historical-style-advertisement-for-the_JUvQJ.png/:/cr=t:0%25,l:18.29%25,w:56.1%25,h:100%25/rs=w:1200,h:1200,cg:true" 
-              alt="Interpretis Advertisement" 
-              className="max-w-xs mx-auto rounded-lg shadow-lg"
-              loading="lazy"
-            />
-          </div>
         </div>
       </div>
       
