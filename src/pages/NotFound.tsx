@@ -1,5 +1,8 @@
+
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import FloatingLetters from "@/components/FloatingLetters";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,14 +15,25 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex items-center justify-center bg-interpretis-dark relative overflow-hidden">
+      <FloatingLetters />
+      
+      <div className="relative z-10 text-center p-6">
+        <div className="glassmorphic-card p-8 md:p-12 max-w-md mx-auto">
+          <h1 className="text-8xl font-bold mb-4 text-gradient">404</h1>
+          <p className="text-xl text-interpretis-text mb-8">
+            The word or phrase you're looking for doesn't exist in our lexicon.
+          </p>
+          <Button 
+            className="btn-primary"
+            onClick={() => window.location.href = '/'}
+          >
+            Return to Etymology
+          </Button>
+        </div>
       </div>
+      
+      <div className="absolute inset-0 bg-cyber-grid-bg z-0 opacity-30"></div>
     </div>
   );
 };
