@@ -14,12 +14,12 @@ const Index = () => {
   const [showDisclaimer, setShowDisclaimer] = useState(false);
   
   useEffect(() => {
-    document.title = "Interpretis - Free AI Etymology Tool | AI Web Tools by AIWebTools.AI";
+    document.title = "Interpretis - AI Etymology & Root Word Analysis Tool | Free AI Tool";
     
     // Add additional SEO meta tags dynamically
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Free AI etymology tool by AIWebTools.AI. Discover word origins, linguistic history, and hidden meanings with Interpretis. Best free AI web tools for language analysis and etymological research.');
+      metaDescription.setAttribute('content', 'Interpretis: Free AI-powered etymology tool that reveals word origins, root meanings, and linguistic history. Discover hidden meanings behind any word instantly with advanced AI analysis.');
     }
     
     // Check if the user has already agreed to the disclaimer
