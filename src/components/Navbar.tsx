@@ -77,9 +77,13 @@ const Navbar: React.FC = () => {
         </div>
         
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in-down bg-interpretis-darker/95 backdrop-blur-lg rounded-b-xl shadow-lg">
-            <div className="flex flex-col space-y-4 p-4">
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="py-4 bg-interpretis-darker/95 backdrop-blur-lg rounded-b-xl shadow-lg">
+            <div className="flex flex-col space-y-3 p-4">
               {navLinks.map((link, index) => (
                 link.isButton ? (
                   <Button 
