@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     { name: 'USE Interpretis 🕰️GPT NOW', href: 'https://chatgpt.com/g/g-67852089291481919b1b8e94152ebb3d-interpretis', isButton: true },
     { name: 'FAQ', href: '#faq', isButton: false },
     { name: 'Disclaimer', href: '#disclaimer', isButton: false },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai', isButton: false }
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools', isButton: false }
   ];
   
   return (
