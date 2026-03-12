@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold">Interpretis <span className="text-interpretis-accent1">🕰️</span> AI</h1>
-              <p className="text-xs text-interpretis-muted">Presented by <a href="https://www.aiwebtools.ai" className="hover:text-interpretis-accent1 transition-colors">AiWebTools.AI</a></p>
+              <p className="text-xs text-interpretis-muted">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-interpretis-accent1 transition-colors">AiWebTools.AI</a></p>
             </div>
           </a>
           
