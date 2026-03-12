@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     { name: 'USE Interpretis 🕰️GPT NOW', href: 'https://chatgpt.com/g/g-67852089291481919b1b8e94152ebb3d-interpretis', isButton: true },
     { name: 'FAQ', href: '#faq', isButton: false },
     { name: 'Disclaimer', href: '#disclaimer', isButton: false },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai', isButton: false }
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools', isButton: false }
   ];
   
   return (
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold">Interpretis <span className="text-interpretis-accent1">🕰️</span> AI</h1>
-              <p className="text-xs text-interpretis-muted">Presented by <a href="https://www.aiwebtools.ai" className="hover:text-interpretis-accent1 transition-colors">AiWebTools.AI</a></p>
+              <p className="text-xs text-interpretis-muted">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-interpretis-accent1 transition-colors">AiWebTools.AI</a></p>
             </div>
           </a>
           
@@ -77,9 +77,13 @@ const Navbar: React.FC = () => {
         </div>
         
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in-down bg-interpretis-darker/95 backdrop-blur-lg rounded-b-xl shadow-lg">
-            <div className="flex flex-col space-y-4 p-4">
+        <div 
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          <div className="py-4 bg-interpretis-darker/95 backdrop-blur-lg rounded-b-xl shadow-lg">
+            <div className="flex flex-col space-y-3 p-4">
               {navLinks.map((link, index) => (
                 link.isButton ? (
                   <Button 
@@ -105,7 +109,7 @@ const Navbar: React.FC = () => {
               ))}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
